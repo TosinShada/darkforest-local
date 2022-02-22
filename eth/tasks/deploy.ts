@@ -44,7 +44,7 @@ async function deploy(
   const controllerWalletAddress =
     hre.ADMIN_PUBLIC_ADDRESS !== undefined ? hre.ADMIN_PUBLIC_ADDRESS : deployer.address;
 
-  const requires = hre.ethers.utils.parseEther('2.1');
+  const requires = hre.ethers.utils.parseEther('2');
   const balance = await deployer.getBalance();
 
   // Only when deploying to production, give the deployer wallet money,
